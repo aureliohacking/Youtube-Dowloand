@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Youtube Download</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="{{ url_for("static", filename="style.css") }}" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="banner">
+		<h1 class="title" data-text="Youtube Download"><i class="fa fa-music"></i> Youtube Download</h1>
+		<form method="POST">
+			<p>Enter The URL
+			<input  class="from-control" type="text" required name="url"></p>
+			<button class="btn" type="submit" formaction="/envia"> Download MP4</button>
+			<button class="btn-2" type="submit" formaction="/envia2"> Download MP3</button>
+		</form>
+		<div class="left">
+			<img src="static/images/image.jpeg">
+		</div>
+	</div>	
+</body>
+</html>
+
+
